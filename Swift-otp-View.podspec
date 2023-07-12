@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'Swift-otp-View'  
-s.version          = '1.0.0'  
+s.version          = '1.0.3'  
 s.summary          = 'The OTP Screen allows you to display OTP fields with different layouts and
 animations base on your needs.' 
 s.description      = <<-DESC
