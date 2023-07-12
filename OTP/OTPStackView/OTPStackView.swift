@@ -13,25 +13,25 @@ protocol OTPDelegate: AnyObject {
     func didChangeValidity(isValid: Bool)
 }
 
-class OTPStackView: UIStackView {
+public class OTPStackView: UIStackView {
     
     //Customise the OTPField here
-    var numberOfFields = 6
-    var showsWarningColor = false
-    var borderWidth = 2
-    var tfCornerRadius = 5
-    var tfSpacing = 5
-    var textFont = UIFont(name: "Kefa", size: 40)
+    public var numberOfFields = 6
+    public var showsWarningColor = false
+    public var borderWidth = 2
+    public var tfCornerRadius = 5
+    public var tfSpacing = 5
+    public var textFont = UIFont(name: "Kefa", size: 40)
     var remainingStrStack: [String] = []
     var textFieldsCollection: [OTPTextField] = []
     weak var delegate: OTPDelegate?
     
     //Colors
-    var inactiveFieldBorderColor = UIColor.gray
-    var textBackgroundColor = UIColor.black
-    var textColor = UIColor.white
-    var activeFieldBorderColor = UIColor.green
-    var isBottomLineEnabled = false
+    public var inactiveFieldBorderColor = UIColor.gray
+    public var textBackgroundColor = UIColor.black
+    public var textColor = UIColor.white
+    public var activeFieldBorderColor = UIColor.green
+    public var isBottomLineEnabled = false
     
     required init(coder: NSCoder) {
         super.init(coder: coder)
@@ -145,7 +145,7 @@ class OTPStackView: UIStackView {
 //MARK: - TextField Handling
 extension OTPStackView: UITextFieldDelegate {
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
         if showsWarningColor {
             setAllFieldColor(color: inactiveFieldBorderColor)
             showsWarningColor = false
@@ -153,13 +153,13 @@ extension OTPStackView: UITextFieldDelegate {
         textField.layer.borderColor = activeFieldBorderColor.cgColor
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    public func textFieldDidEndEditing(_ textField: UITextField) {
         checkForValidity()
         textField.layer.borderColor = inactiveFieldBorderColor.cgColor
     }
     
     //switches between OTPTextfields
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range:NSRange,
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range:NSRange,
                    replacementString string: String) -> Bool {
         guard let textField = textField as? OTPTextField else { return true }
         if string.count > 1 {

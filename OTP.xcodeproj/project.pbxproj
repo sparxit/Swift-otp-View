@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		256AF9652A5570A8007A8608 /* OTPStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256AF9642A5570A8007A8608 /* OTPStackView.swift */; };
-		25CCE8692A49BE85006480C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CCE8682A49BE85006480C9 /* AppDelegate.swift */; };
-		25CCE86B2A49BE85006480C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CCE86A2A49BE85006480C9 /* SceneDelegate.swift */; };
-		25CCE86D2A49BE85006480C9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CCE86C2A49BE85006480C9 /* OTPViewController.swift */; };
 		25CCE8702A49BE85006480C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CCE86E2A49BE85006480C9 /* Main.storyboard */; };
 		25CCE8722A49BE86006480C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CCE8712A49BE86006480C9 /* Assets.xcassets */; };
 		25CCE8752A49BE86006480C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CCE8732A49BE86006480C9 /* LaunchScreen.storyboard */; };
@@ -46,9 +43,6 @@
 /* Begin PBXFileReference section */
 		256AF9642A5570A8007A8608 /* OTPStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPStackView.swift; sourceTree = "<group>"; };
 		25CCE8652A49BE85006480C9 /* OTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25CCE8682A49BE85006480C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25CCE86A2A49BE85006480C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25CCE86C2A49BE85006480C9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		25CCE86F2A49BE85006480C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25CCE8712A49BE86006480C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25CCE8742A49BE86006480C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,14 +96,6 @@
 			path = AppUI;
 			sourceTree = "<group>";
 		};
-		256AF9632A55620B007A8608 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				25CCE86C2A49BE85006480C9 /* OTPViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		259943DB2A4EC40F000B68B7 /* OTPStackView */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +127,6 @@
 		25CCE8672A49BE85006480C9 /* OTP */ = {
 			isa = PBXGroup;
 			children = (
-				25CCE8682A49BE85006480C9 /* AppDelegate.swift */,
-				25CCE86A2A49BE85006480C9 /* SceneDelegate.swift */,
-				256AF9632A55620B007A8608 /* Controller */,
 				255782D52A55601F00F84431 /* AppUI */,
 				259943DB2A4EC40F000B68B7 /* OTPStackView */,
 				25CCE8982A49BE96006480C9 /* OTPField */,
@@ -317,11 +300,8 @@
 				25CCE8A02A49BFB4006480C9 /* OTPField + UITextFieldDelegete.swift in Sources */,
 				25CCE8A42A49BFFE006480C9 /* OTPEditingStatus.swift in Sources */,
 				25CCE8A62A49C01E006480C9 /* Vibration.swift in Sources */,
-				25CCE86D2A49BE85006480C9 /* OTPViewController.swift in Sources */,
 				25CCE89C2A49BF53006480C9 /* OTPField.swift in Sources */,
-				25CCE8692A49BE85006480C9 /* AppDelegate.swift in Sources */,
 				25CCE89A2A49BF27006480C9 /* OTPAnimationTypes.swift in Sources */,
-				25CCE86B2A49BE85006480C9 /* SceneDelegate.swift in Sources */,
 				256AF9652A5570A8007A8608 /* OTPStackView.swift in Sources */,
 				25CCE8A22A49BFDA006480C9 /* OTPFieldBuilder.swift in Sources */,
 				25CCE89E2A49BF89006480C9 /* OTPField + Animations.swift in Sources */,
