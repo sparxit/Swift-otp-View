@@ -12,7 +12,7 @@ s.homepage         = 'https://github.com/santosh-k/Swift-otp-View.git'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'sparxit' => 'abhishek@sparxitsolutions.com' } 
 s.source           = { :git => 'https://github.com/santosh-k/Swift-otp-View.git', :commit =>
-"2794aa82cdb4f7005ecaab3a7e6df35a572a9c86" } 
+"0d5cdb7cbbae896ddb317291407897670c149a41" } 
 s.ios.deployment_target = '13.0'
 s.source_files     =   'OTP/**/*.swift'
 end
