@@ -13,7 +13,7 @@ CocoaPods
 To integrate the OTP Screen into your project using CocoaPods, follow these steps:-
 
 Add the following line to your Podfile:
-pod ‘IOSOTPView'
+pod ‘Swift-otp-View'
 
 Run the following command in your terminal to fetch the latest version:
 pod repo update
@@ -21,8 +21,8 @@ pod repo update
 Usage
 Once you have integrated the IOSOTPView into your project, you can start using it in your code.
 
-Import the IOSOTPView module into your Swift file:
-import IOSOTPView
+Import the Swift-otp-View module into your Swift file:
+import Swift-otp-View
 
 Initialising the Component
 To create an OTP field, use the following function:
@@ -39,9 +39,7 @@ Enter OTP With Sequence
 Enter OTP With Sequence to display OTP fields with a sequence, use the following function:
 
 func enterOtpWithSequence(numOfFields: UInt) {
-        
         if numOfFields == 4 || numOfFields == 6 {
-            
             lazy var otpField: OTPField = {
                 let field = OTPField()
                 field.slotCount = numOfFields
@@ -60,7 +58,6 @@ func enterOtpWithSequence(numOfFields: UInt) {
         } else {
             print("number of fields must be 4 or 6")
         }
-        
     }
 
 
