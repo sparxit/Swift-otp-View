@@ -19,7 +19,7 @@ Run the following command in your terminal to fetch the latest version:
 pod repo update
 
 Usage
-Once you have integrated the IOSOTPView into your project, you can start using it in your code.
+Once you have integrated the Swift-otp-View into your project, you can start using it in your code.
 
 Import the Swift-otp-View module into your Swift file:
 import Swift-otp-View
@@ -28,6 +28,7 @@ Initialising the Component
 To create an OTP field, use the following function:
 
 func createOTPField(withSequence: Bool){
+
         if withSequence{
             enterOtpWithSequence(numOfFields: 4)
         } else {
@@ -39,6 +40,7 @@ Enter OTP With Sequence
 Enter OTP With Sequence to display OTP fields with a sequence, use the following function:
 
 func enterOtpWithSequence(numOfFields: UInt) {
+
         if numOfFields == 4 || numOfFields == 6 {
             lazy var otpField: OTPField = {
                 let field = OTPField()
@@ -65,6 +67,7 @@ Enter OTP Without Sequence
 To display OTP fields without a sequence, use the following function:
 
 func enterOtpWithoutSequence(numOfFields: UInt) {
+
         let stackView = OTPStackView()
                 
         //Add textFields
